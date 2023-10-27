@@ -6,13 +6,13 @@ Ce projet est une application Symfony qui fonctionne avec Docker. Voici comment 
 
 ## Pour commencer
 
-## Environnement de développement (dev)
+## Environnement de développement (environement_dev)
 
 ### Démarrage
 
-1. **Naviguez** vers le dossier `dev` :
+1. **Naviguez** vers le dossier `environement_dev` :
     ```sh
-    cd dev
+    cd environement_dev
     ```
 
 2. **Démarrez** les containers avec Docker Compose :
@@ -26,13 +26,13 @@ Ce projet est une application Symfony qui fonctionne avec Docker. Voici comment 
 
 ---
 
-## Environnement de préproduction (preprod)
+## Environnement de préproduction (environement_preprod)
 
 ### Démarrage
 
-1. **Naviguez** vers le dossier `preprod` :
+1. **Naviguez** vers le dossier `environement_preprod` :
     ```sh
-    cd preprod
+    cd environement_preprod
     ```
 
 2. **Démarrez** les containers avec Docker Compose :
