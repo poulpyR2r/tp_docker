@@ -4,7 +4,7 @@ services:
   php:
     build:
       context: ..
-      dockerfile: Dockerfile.prod.php
+      dockerfile: ./environement_preprod/DockerFileProd/DockerFile.prod.php
     volumes:
       - ../my_symfony_project:/var/www/html
 

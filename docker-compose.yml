@@ -1,41 +1,41 @@
-version: "3.9"
+# version: "3.9"
 
-services:
-  composer:
-    build:
-      context: .
-      dockerfile: ./composer/Dockerfile.composer
-    volumes:
-      - ./my_symfony_project:/app
+# services:
+#   composer:
+#     build:
+#       context: .
+#       dockerfile: ./composer/Dockerfile.composer
+#     volumes:
+#       - ./my_symfony_project:/app
 
-  php:
-    build:
-      context: .
-      dockerfile: ./php/Dockerfile.php
-    volumes:
-      - ./my_symfony_project:/var/www/html
+#   php:
+#     build:
+#       context: .
+#       dockerfile: ./php/Dockerfile.php
+#     volumes:
+#       - ./my_symfony_project:/var/www/html
 
-  webserver:
-    image: nginx:1.25.3
-    volumes:
-      - ./config/nginx:/etc/nginx/conf.d
-      - ./my_symfony_project:/var/www/html
-    ports:
-      - "8000:80"
-    depends_on:
-      - php
+#   webserver:
+#     image: nginx:1.25.3
+#     volumes:
+#       - ./config/nginx:/etc/nginx/conf.d
+#       - ./my_symfony_project:/var/www/html
+#     ports:
+#       - "8000:80"
+#     depends_on:
+#       - php
 
-  database:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: mydatabase
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
-    ports:
-      - "3306:3306"
-    volumes:
-      - db_data:/var/lib/mysql
+#   database:
+#     image: mysql:8.0
+#     environment:
+#       MYSQL_ROOT_PASSWORD: rootpassword
+#       MYSQL_DATABASE: mydatabase
+#       MYSQL_USER: user
+#       MYSQL_PASSWORD: password
+#     ports:
+#       - "3306:3306"
+#     volumes:
+#       - db_data:/var/lib/mysql
 
-volumes:
-  db_data:
+# volumes:
+#   db_data:
