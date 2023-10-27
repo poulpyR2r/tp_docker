@@ -4,14 +4,14 @@ services:
   composer:
     build:
       context: ..
-      dockerfile: Dockerfile.composer
+      dockerfile: ./composer/Dockerfile.composer
     volumes:
       - ../my_symfony_project:/app
 
   php:
     build:
       context: ..
-      dockerfile: Dockerfile.dev.php
+      dockerfile: ./environement_dev/DockerFileDev/DockerFile.dev
     volumes:
       - ../my_symfony_project:/var/www/html
 
