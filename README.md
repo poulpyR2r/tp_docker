@@ -6,6 +6,15 @@ Ce projet est une application Symfony qui fonctionne avec Docker. Voici comment 
 
 ## Pour commencer
 
+## Initialisation du projet
+
+1. **A la racine du projet** executer la commande suivante :
+
+   ```sh
+   docker-compose run composer install
+
+   ```
+
 ## Environnement de développement (environement_dev)
 
 ### Démarrage
@@ -28,15 +37,6 @@ Ce projet est une application Symfony qui fonctionne avec Docker. Voici comment 
 ---
 
 ## Environnement de préproduction (environement_preprod)
-
-## Initialisation du projet
-
-1. **A la racine du projet** executer la commande suivante :
-
-   ```sh
-   docker-compose run composer install
-
-   ```
 
 ### Démarrage
 
