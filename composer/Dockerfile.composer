@@ -1,0 +1,8 @@
+FROM composer:latest AS composer
+
+#set 
+WORKDIR /app
+
+#copy composer 
+COPY composer.json composer.json
+
